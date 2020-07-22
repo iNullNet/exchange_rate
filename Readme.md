@@ -10,5 +10,5 @@ Example: if you want to check
 - € = £ (EURO with British POUND) use "exchange-rate.sh EUR GBP"
 
 that's it.
-If you want you can also put in /usr/local/bin for exec everywhere (path) where you are.
 
+If you want you can also put in /usr/local/bin for exec everywhere (path) where you are.
