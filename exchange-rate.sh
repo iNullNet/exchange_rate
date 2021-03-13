@@ -30,9 +30,9 @@ function VARIABLE_CHECK() {
 
 function RECOVER() {
 	echo -e "loading in progress.."
-	rate=$(curl -s https://transferwise.com/us/currency-converter/$source_to_find-to-$target_to_find-rate |grep "currentRate" |tail -n 1 |cut -d: -f2 |tr -d '",' |awk '{print $3}')
-	source=$(curl -s https://transferwise.com/us/currency-converter/$source_to_find-to-$target_to_find-rate |grep "source" |tail -n 1  |cut -d: -f2 |tr -d '",' |awk '{print $3}')
-	target=$(curl -s https://transferwise.com/us/currency-converter/$source_to_find-to-$target_to_find-rate |grep "target" |tail -n 1 |cut -d: -f2 |tr -d '",' |awk '{print $3}')
+	rate=$(curl -s https://wise.com/us/currency-converter/$source_to_find-to-$target_to_find-rate |grep "currentRate" |tail -n 1 |cut -d: -f2 |tr -d '",' |awk '{print $3}')
+	source=$(curl -s https://wise.com/us/currency-converter/$source_to_find-to-$target_to_find-rate |grep "source" |tail -n 1  |cut -d: -f2 |tr -d '",' |awk '{print $3}')
+	target=$(curl -s https://wise.com/us/currency-converter/$source_to_find-to-$target_to_find-rate |grep "target" |tail -n 1 |cut -d: -f2 |tr -d '",' |awk '{print $3}')
 	echo -e "done!!"
 }
 
